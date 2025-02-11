@@ -1,0 +1,67 @@
+.chatbot {
+    border: 2px solid #D1A7F7; /* Light pinkish lilac border */
+    border-radius: 10px;
+    width: 300px;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot-header {
+    background-color: #FFB6C1; /* Light pink background */
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    color: #D50057; /* Darker pink for text */
+}
+
+.chatbot-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 300px; /* Limit height for scrolling */
+}
+
+.message {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.message.user {
+    background-color: #10021d; /* Light pinkish lilac for user messages */
+    align-self: flex-end; /* Align user messages to the right */
+}
+
+.message.bot {
+    background-color: #010410; /* Medium pink for bot messages */
+    align-self: flex-start; /* Align bot messages to the left */
+}
+
+.chatbot-input {
+    display: flex;
+    padding: 10px;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #D1A7F7; /* Light pinkish lilac border */
+    border-radius: 5px;
+}
+
+.chatbot-input button {
+    padding: 10px;
+    margin-left: 5px;
+    background-color: #FF80AB; /* Medium pink for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbot-input button:hover {
+    background-color: #D50057; /* Darker pink on hover */
+}

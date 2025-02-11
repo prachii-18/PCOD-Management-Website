@@ -1,0 +1,129 @@
+/* Full screen gradient background */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to right, #FFB6C1, #D1A7F7);
+    color: #FF4E94;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Title */
+.title {
+    font-family: 'Candara', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #D50057;
+}
+
+/* Subtitle */
+.subtitle {
+    font-family: 'Bookman Old Style', serif;
+    font-size: 1.5rem;
+    color: #f6276c;
+}
+
+/* Tasks container */
+.tasks {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* Space between task boxes */
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Task box */
+.task {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(238, 199, 232, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #D50057;
+    min-width: 280px;
+    max-width: 320px;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.task:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #FF80AB;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+    background: #D50057;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 80%;
+    max-width: 600px;
+    background-color: #f38abb;
+    border-radius: 25px;
+    height: 30px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start (left) */
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #FF4081;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    line-height: 30px; /* Center text vertically */
+    font-weight: bold;
+    transition: width 0.5s ease-in-out;
+    width: 0; /* Start with 0 width */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tasks {
+        flex-direction: column; /* Stack tasks vertically on smaller screens */
+        align-items: center;
+    }
+
+    .task {
+        max-width: 90%; /* Allow tasks to take more width on small screens */
+    }
+
+    .title {
+        font-size: 3rem; /* Adjust title size */
+    }
+
+    .subtitle {
+        font-size: 1.2rem; /* Adjust subtitle size */
+    }
+}

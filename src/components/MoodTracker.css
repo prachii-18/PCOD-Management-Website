@@ -1,0 +1,58 @@
+.mood-tracker-container {
+    background: #ffc0cb; /* Light pink background */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+  }
+  
+  .mood-tracker-container h3 {
+    font-size: 1.5em;
+    color: #d63384;
+    margin-bottom: 10px;
+  }
+  
+  .mood-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .mood-button {
+    font-size: 1.5em;
+    padding: 10px;
+    border: none;
+    background: #ff69b4;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .mood-button:hover {
+    background: #ff1493;
+  }
+  
+  .selected-mood {
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: #8b008b;
+  }
+  
+  .complete-task-button {
+    background: #ff69b4;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1em;
+  }
+  
+  .complete-task-button:hover {
+    background: #ff1493;
+  }
+  

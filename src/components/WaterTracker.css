@@ -1,0 +1,31 @@
+.tracker-container {
+    text-align: center;
+    background: #e3f2fd; /* Light blue background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 10px auto;
+  }
+  
+  .tracker-container input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #64b5f6; /* Blue border */
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .tracker-container input:focus {
+    outline: none;
+    border-color: #1e88e5;
+  }
+  
+  .tracker-container p {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1565c0; /* Dark blue text */
+  }
+  

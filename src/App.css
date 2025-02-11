@@ -1,0 +1,163 @@
+/* Import Stylish Font for "Femora" */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: #ea9dee;
+  padding-top: 20px;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar ul li:hover {
+  background: #da89c5;
+}
+
+/* Menu Icon */
+.menu-icon {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ef2a86;
+}
+
+/* User Profile Icon */
+.user-icon {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.user-info {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+.title {
+  font-family: 'Poppins, cursive'; /* Stylish cursive font */
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px; /* Reduced gap */
+}
+
+.subtitle {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 0; /* Reduce spacing */
+}
+
+/* Chatbot Icon */
+.chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.robot-icon {
+  color: hsl(0, 100%, 71%);
+}
+
+/* Chatbot Popup */
+.chatbot-container {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-chatbot {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Tasks */
+.tasks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.task {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Bar */
+.progress-container {
+  margin: 20px auto;
+  width: 80%;
+}
+
+.progress-bar {
+  background: #4caf50;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.small-image {
+  width: 200px; /* Adjust width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}

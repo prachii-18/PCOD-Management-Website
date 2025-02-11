@@ -1,0 +1,41 @@
+.step-tracker {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .exercise-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  .exercise-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .exercise-section li {
+    margin-bottom: 15px;
+  }
+  
+  .music-icon {
+    margin-top: 10px;
+    cursor: pointer;
+    color: #ff4f7b;
+    transition: transform 0.2s;
+  }
+  
+  .music-icon:hover {
+    transform: scale(1.2);
+  }
+  
