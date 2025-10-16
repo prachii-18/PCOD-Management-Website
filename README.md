@@ -27,7 +27,7 @@ Prerequisites
 * MongoDB (local or Atlas)
 
 Installation
-git clone https://github.com/p-snowflake/PCOD-Management-Website
+git clone https://github.com/prachii-18/PCOD-Management-Website
 cd PCOD-Management-Website
 npm install
 npm start
